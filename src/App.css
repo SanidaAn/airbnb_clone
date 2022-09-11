@@ -1,3 +1,81 @@
+body {
+  margin: 0;
+}
+
+.navbar{
+  height:70px;
+  display:flex;
+  /* background-color: #61dafb; */
+  padding:20px 30px;
+  /* box-shadow: #282c34; */
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.473);
+}
+
+.hero{
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.imageHero{
+  /* position: absolute; */
+  width: 495.91px;
+  height: 332px;
+  left: 77px;
+  top: 96px;
+}
+
+.titleHero{
+  /* position: absolute; */
+  width: 347px;
+  height: 40px;
+  left: 36px;
+  top: 360px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  padding-left:150px;
+  /* background-color: rgb(255, 0, 191); */
+}
+
+.paragraphHero{
+  width:320px;
+  height:56px;
+  top:416px;
+  left:36px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left:150px;
+  /* background-color: rgb(255, 0, 191); */
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-evenly; */
+  justify-content:space-between;
+  padding:30px 0 30px ;
+  margin:auto;
+}
+
+.imgOne{
+  display:block;
+}
+h5{
+  position: absolute;
+  background-color: rgb(255, 255, 255); 
+  padding:5px;
+  border-radius: 5px;
+  margin-left:10px;
+}
+
+/* ############################################ */
 .App {
   text-align: center;
 }
