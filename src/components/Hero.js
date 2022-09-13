@@ -14,3 +14,7 @@ export default function Hero(){
         </div>
     );
 }
+
+// public/images
+// /Users/annasanida/React_scrimba/airbnb_clone/public
+// /Users/annasanida/React_scrimba/airbnb_clone/public/images/Group.png

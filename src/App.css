@@ -5,9 +5,7 @@ body {
 .navbar{
   height:70px;
   display:flex;
-  /* background-color: #61dafb; */
   padding:20px 30px;
-  /* box-shadow: #282c34; */
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.473);
 }
 
@@ -18,7 +16,6 @@ body {
 }
 
 .imageHero{
-  /* position: absolute; */
   width: 495.91px;
   height: 332px;
   left: 77px;
@@ -26,7 +23,6 @@ body {
 }
 
 .titleHero{
-  /* position: absolute; */
   width: 347px;
   height: 40px;
   left: 36px;
@@ -37,7 +33,6 @@ body {
   font-size: 36px;
   line-height: 110%;
   padding-left:150px;
-  /* background-color: rgb(255, 0, 191); */
 }
 
 .paragraphHero{
@@ -52,16 +47,42 @@ body {
   letter-spacing: 0em;
   text-align: left;
   padding-left:150px;
-  /* background-color: rgb(255, 0, 191); */
 }
 
+
+/* Card section */
 .section{
   display: flex;
   flex-direction: row;
-  /* justify-content:space-evenly; */
   justify-content:space-between;
-  padding:30px 0 30px 30px;
+  padding:30px 10px 30px 10px;
   margin:auto;
+  flex-wrap: nowrap;
+  gap: 20px;
+  /* background-color: #cc32d1; */
+
+  
+}
+.cardOne{
+  /* background-color: #3254d1; */
+  /* width: 300px; */
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
+/* ADD */
+.cardTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background-color: #ced132; */
+
+}
+/* ADD */
+.cardPrice {
+  /* margin-top: auto; */
+  /* background-color: #32d13f; */
+
 }
 
 .imgOne{
@@ -73,6 +94,19 @@ h5{
   padding:5px;
   border-radius: 5px;
   margin-left:10px;
+}
+
+.txtCardContainer{
+  margin:5px;
+  display: flex;
+  align-items: center;
+  /* background-color: #d15c32; */
+
+}
+
+.greyTxt{
+  color:#9c9ea5;
+  font-weight: 500;
 }
 
 /* ############################################ */

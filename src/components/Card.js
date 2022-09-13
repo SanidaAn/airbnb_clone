@@ -1,33 +1,36 @@
 import React from 'react';
-import logo from "../images/image_12.png";
-import group from "../images/Group65.png";
-import logo2 from "../images/wedding-photography.png";
-import group2 from "../images/Group78.png";
-import logo3 from "../images/mountain-bike.png";
-import group3 from "../images/Group79.png";
+import star from "../images/Star.png";
 
 
-export default function Card(){
+export default function Card(props){
+    let badgeText
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
     return(
-        <div className='section'>
+        // <div className='section'>
 
             <div className='cardOne'>
-            <h5>SOLD OUT</h5>
-                <img src={logo} className='imgOne'/>
-                <img src={group} className='imgTwo'/>
-            </div>
+                            {badgeText && <h5>{badgeText}</h5>}
 
-            <div className='cardTwo'>
-            <h5>ONLINE</h5>
-                <img src={logo2} className='imgOne'/>
-                <img src={group2} className='imgTwo'/>
-            </div>
+                {/* {props.openSpots === 0 ? <h5>SOLD OUT</h5>:<h5>ONLINE</h5>} */}
+                {/* console.log({badgeText}); */}
+                    <img src={`../img/${props.img}`} className='imgOne'/>
+                    <div className='txtCardContainer'>
+                        <img src={star}/>
+                        <span className='greyTxt'> {props.rating}</span>
+                        <span className='greyTxt'> ({props.reviewCount}) &#xB7; </span>
+                        <span className='greyTxt'>{props.location}</span>
+                    </div>
+                    <div className='cardTitle'>{props.title}</div>
+                    <div className="cardPrice"><b>From {props.price}€</b> / person</div>
+                    {/* <div>{props.description}</div> */}
 
-            <div className='cardThree'>
-                <img src={logo3} className='imgOne'/>
-                <img src={group3} className='imgTwo'/>
             </div>
-            
-        </div>
+        // </div>
+
+        
     )
 }
